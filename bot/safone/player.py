@@ -170,7 +170,7 @@ async def notforu(_, m: Message):
     except:
         pass
 
-allcmd = ["start", "help", f"start@{USERNAME}", f"help@{USERNAME}"] + admincmds
+allcmd = ["vstart", "vhelp", f"start@{USERNAME}", f"help@{USERNAME}"] + admincmds
 
 @Client.on_message(filters.command(allcmd) & filters.group & ~filters.chat(CHAT_ID))
 async def not_chat(_, m: Message):
